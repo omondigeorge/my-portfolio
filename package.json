@@ -2,7 +2,7 @@
   "name": "george-portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://omondigeorge.github.io/portfolio/",
+  "homepage": "https://omondigeorge.github.io/portfolio.git/",
   "type": "module",
   "scripts": {
     "dev": "vite",
