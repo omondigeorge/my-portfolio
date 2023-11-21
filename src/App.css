@@ -1,0 +1,33 @@
+:root {
+  --primary: #BF957D;
+  --secondary: #2b3452;
+  background-image: url("./assets/Background.avif");
+  background-size: cover;
+  background-position: absolute;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  font-size: 20px;
+  position: relative;
+}
+
+header nav a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+  color: black;
+}
+
+header nav a:hover {
+  background: var(--primary);
+}
+
+nav img {
+  width: 50px;
+}

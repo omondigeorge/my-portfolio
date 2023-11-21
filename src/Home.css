@@ -1,0 +1,54 @@
+.sec-1 {
+  max-width: 600px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-wrap: balance;
+}
+
+.sec-1 h1 {
+  font-size: 4em;
+  text-wrap: balance;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  padding: 30px 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.src {
+  background-image: url("./assets/Shire.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 400px;
+  border-radius: 50%;
+}
+
+.name {
+  color: #1e2029;
+  text-shadow: 0px 1px 0px #ff6633, 0px 3px 0px #fff, 0px 4px 0px #ff6633,
+    0px 7px 5px #a2d2ff;
+}
+
+.reach-me {
+  cursor: pointer;
+  padding: 5px;
+  transition: all 0.3s;
+  border-radius: 7px;
+  border: 1px solid black;
+  background: linear-gradient(45deg, #ff6633, #a2d2ff);
+}
+
+button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
