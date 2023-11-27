@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
         <header>
           <nav>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/home">Home</NavLink>
             <NavLink to="/cv">CV</NavLink>
             <NavLink to="/portfolio">Portfolio</NavLink>
             <NavLink to="/contact">Contact</NavLink>
@@ -18,7 +18,7 @@ function App() {
         </header>
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/cv" element={<CV />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
