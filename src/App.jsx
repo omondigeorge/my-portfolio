@@ -18,15 +18,12 @@ function App() {
         </header>
         <main>
           <Routes>
-            <Route index element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/cv" element={<CV />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-        <footer className="footer">
-
-        </footer>
     </BrowserRouter>
   );
 }

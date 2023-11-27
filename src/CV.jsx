@@ -2,14 +2,19 @@ import "./CV.css";
 
 function CV() {
   return (
-    <>
+    <div className="cv-page">
       <section id="profile">
         <hr />
         <div className="left">
           <h3>Profile</h3>
         </div>
         <div className="right">
-          <p>I am a web developer from Nairobi, Kenya.</p>
+          <p>
+            I'm a Frontend Web Developer skilled in HTML, CSS, JavaScript,
+            Bootstrap, and React. I design and build user-friendly, responsive
+            web interfaces and interactive applications. My focus on clean code
+            and the latest technologies ensures a seamless user experience.
+          </p>
         </div>
       </section>
 
@@ -45,13 +50,34 @@ function CV() {
               <h5>2021-Present</h5>
             </div>
             <ul>
-              <li>Implementing advanced editing techniques to ensure that transcripts are grammatically correct and read naturally</li>
-              <li>Adapting to changing client requirements, quickly learning and applying new transcription techniques</li>
-              <li>Utilizing specialized transcription software to maximize accuracy and efficiency</li>
-              <li>Maintaining a database of transcription information and resources</li>
-              <li>Converting audio recordings into text documents within 2 hours of receiving them</li>
-            <li>Developing standardized processes to improve efficiency and accuracy</li>
-            <li>Utilizing subject-specific terminology and research to transcribe complex topics accurately</li>
+              <li>
+                Implementing advanced editing techniques to ensure that
+                transcripts are grammatically correct and read naturally
+              </li>
+              <li>
+                Adapting to changing client requirements, quickly learning and
+                applying new transcription techniques
+              </li>
+              <li>
+                Utilizing specialized transcription software to maximize
+                accuracy and efficiency
+              </li>
+              <li>
+                Maintaining a database of transcription information and
+                resources
+              </li>
+              <li>
+                Converting audio recordings into text documents within 2 hours
+                of receiving them
+              </li>
+              <li>
+                Developing standardized processes to improve efficiency and
+                accuracy
+              </li>
+              <li>
+                Utilizing subject-specific terminology and research to
+                transcribe complex topics accurately
+              </li>
             </ul>
           </div>
           <hr />
@@ -64,11 +90,29 @@ function CV() {
               <h5>June 2021-Sept 2021</h5>
             </div>
             <ul>
-              <li>Developed and implemented a tailored Balanced Scorecard for performance management in collaboration with cross-functional teams.</li>
-              <li>Actively drove program enhancement and innovation through methodologies like Lean Process Improvement, fostering continuous improvement and innovative solutions.</li>
-              <li>Enhanced operational efficiency and decision-making by analyzing weighbridge data trends and forecasting future developments.</li>
-              <li>Oversaw critical financial management aspects, including monthly report compilation and budget data for various departments.</li>
-              <li>Evaluated company processes to enhance success and increase annual turnover, focusing on workflow, resource allocation, and KPIs.</li>
+              <li>
+                Developed and implemented a tailored Balanced Scorecard for
+                performance management in collaboration with cross-functional
+                teams.
+              </li>
+              <li>
+                Actively drove program enhancement and innovation through
+                methodologies like Lean Process Improvement, fostering
+                continuous improvement and innovative solutions.
+              </li>
+              <li>
+                Enhanced operational efficiency and decision-making by analyzing
+                weighbridge data trends and forecasting future developments.
+              </li>
+              <li>
+                Oversaw critical financial management aspects, including monthly
+                report compilation and budget data for various departments.
+              </li>
+              <li>
+                Evaluated company processes to enhance success and increase
+                annual turnover, focusing on workflow, resource allocation, and
+                KPIs.
+              </li>
             </ul>
           </div>
           <hr />
@@ -81,11 +125,27 @@ function CV() {
               <h5>2020-Present</h5>
             </div>
             <ul>
-              <li>Implementing advanced editing techniques to ensure that transcripts are grammatically correct and read naturally</li>
-              <li>Submitting completed work to the company platform and correcting any errors based on the feedback provided</li>
-              <li>Understanding client specifications and noting any formatting or notation requests before submission of transcripts</li>
-              <li>Adhering to all confidentiality guidelines and respecting sensitive information</li>
-              <li>Ensuring timely reviewing of transcripts for spelling, grammar, or formatting errors, as well as addressing other inconsistencies</li>
+              <li>
+                Implementing advanced editing techniques to ensure that
+                transcripts are grammatically correct and read naturally
+              </li>
+              <li>
+                Submitting completed work to the company platform and correcting
+                any errors based on the feedback provided
+              </li>
+              <li>
+                Understanding client specifications and noting any formatting or
+                notation requests before submission of transcripts
+              </li>
+              <li>
+                Adhering to all confidentiality guidelines and respecting
+                sensitive information
+              </li>
+              <li>
+                Ensuring timely reviewing of transcripts for spelling, grammar,
+                or formatting errors, as well as addressing other
+                inconsistencies
+              </li>
             </ul>
           </div>
         </div>
@@ -97,10 +157,8 @@ function CV() {
           <h3>Education</h3>
         </div>
         <div className="right">
-        <p className="school">
-            <strong>
-            GLAD Technology
-            </strong>
+          <p className="school">
+            <strong>GLAD Technology</strong>
             <br />
             Web Development
             <br />
@@ -131,7 +189,37 @@ function CV() {
           </p>
         </div>
       </section>
-    </>
+      
+      <section id="education">
+        <hr />
+        <div className="left">
+          <h3>Certifications</h3>
+        </div>
+        <div className="right">
+          <p className="school">
+            <strong>Cert name</strong>
+            <br />
+            Issuing institution
+            <br />
+            Date of issue
+          </p>
+          <p className="school">
+            <strong>Cert name</strong>
+            <br />
+            Issuing institution
+            <br />
+            Date of issue
+          </p>
+          <p className="school">
+            <strong>Cert name</strong>
+            <br />
+            Issuing institution
+            <br />
+            Date of issue
+          </p>
+        </div>
+      </section>
+    </div>
   );
 }
 

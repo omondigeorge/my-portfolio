@@ -1,24 +1,53 @@
 import "./Contact.css";
 import React from "react";
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
-function Contact() {
+const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm("service_4pmet73", "template_e6zo4rb", form.current, "zIO2fnoha_itVWjVr")
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      })
+      e.target.reset()
+    };
+
   return (
     <>
       <div className="container">
-        <form className="card">
+        <form ref={form} onSubmit={sendEmail} className="card">
           <h3>I'll be glad to hear from you!</h3>
-          <label htmlFor="fname">First Name</label>
-          <input type="text" id="fname" placeholder="Jane" name="firstname" required autoComplete="given-name"/>
+          <label htmlFor="user_fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            placeholder="Jane"
+            name="firstname"
+            required
+            autoComplete="given-name"
+          />
 
-          <label htmlFor="lname">Last Name</label>
-          <input type="text" id="lname" placeholder="Doe" name="lastname" required autoComplete="given-name"/>
+          <label htmlFor="user_lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            placeholder="Doe"
+            name="lastname"
+            required
+            autoComplete="given-name"
+          />
 
-          <label htmlFor="email">Email</label>
+          <label htmlFor="user_email">Email</label>
           <input
             type="email"
             id="email"
             placeholder="janedoe@gmail.com"
-            name="email"
+            name="user_email"
             required
             autoComplete="off"
           />
@@ -39,6 +68,6 @@ function Contact() {
       </div>
     </>
   );
-}
+};
 
 export default Contact;
