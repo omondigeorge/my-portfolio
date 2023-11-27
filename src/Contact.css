@@ -24,7 +24,6 @@ button[type=submit]:hover {
   
   .card {
     border-radius: 5px;
-    padding: 10px;
     display: grid;
     border: none;
     margin: auto;
