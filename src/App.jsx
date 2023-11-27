@@ -12,7 +12,7 @@ function App() {
         <nav>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/cv">CV</NavLink>
-          <NavLink to="/portfolio-page">Portfolio</NavLink>
+          <NavLink to="/portfolio">Portfolio</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </nav>
       </header>
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cv" element={<CV />} />
-          <Route path="/portfolio-page" element={<Portfolio />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

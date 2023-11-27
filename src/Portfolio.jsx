@@ -6,24 +6,31 @@ function ProjectsPage() {
   const projects = [
     {
       id: 1,
-      imageUrl: "https://logo.com/image-cdn/images/kts928pd/production/480d1678eed6a77b9992d693ada7b900841f4160-500x375.webp?w=640&q=72",
+      imageUrl: "#",
       alt: "Project 1",
       description: "This was my first project",
-      link: "https://chronos.thqnordic.com/",
+      link: "#",
     },
     {
       id: 2,
-      imageUrl: "https://logo.com/image-cdn/images/kts928pd/production/63cd674b64834445926040b72aa5295cb99960b9-500x375.webp?w=640&q=72",
+      imageUrl: "#",
       alt: "Project 2",
       description: "This was my second project",
-      link: "https://www.enkelmann.org/",
+      link: "#",
     },
     {
       id: 3,
-      imageUrl: "https://logo.com/image-cdn/images/kts928pd/production/ffedc77ab32dd34f7229f24a2a6423dfb9839dae-500x375.webp?w=640&q=72",
+      imageUrl: "#",
       alt: "Project 3",
       description: "This was my third project",
-      link: "https://www.crunchybakery.co.uk/",
+      link: "#",
+    },
+    {
+      id: 4,
+      imageUrl: "#",
+      alt: "Project 4",
+      description: "This was my fourth project",
+      link: "#",
     },
   ];
 
