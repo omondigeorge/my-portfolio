@@ -1,5 +1,4 @@
 import "./Home.css";
-import Contact from "./Contact.jsx";
 import React from "react";
 import { Link } from "react-router-dom";
 

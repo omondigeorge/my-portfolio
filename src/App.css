@@ -14,19 +14,35 @@ nav {
   height: 100%;
   align-items: center;
   font-size: 20px;
+  margin-top: 25px;
 }
 
-header nav a {
+nav a {
   text-decoration: none;
-  padding: 6px;
-  border-radius: 4px;
   color: black;
+  position: relative;
 }
 
-header nav a:hover {
-  background: var(--primary);
+nav a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
 }
 
-nav img {
-  width: 50px;
+nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  border-radius: 4px;
+}
+nav a:focus::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  border-radius: 4px;
 }

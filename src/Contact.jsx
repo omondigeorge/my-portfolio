@@ -1,26 +1,52 @@
 import "./Contact.css";
-import React from "react";
+import React, { useState } from "react";
 import { useRef } from "react";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
+  const [status, setStatus] = useState("");
+  const [responseMessage, setResponseMessage] = useState("");
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_4pmet73", "template_e6zo4rb", form.current, "zIO2fnoha_itVWjVr")
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_4pmet73",
+        "template_e6zo4rb",
+        form.current,
+        "zIO2fnoha_itVWjVr"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+          setStatus("success");
+          setResponseMessage("Message sent successfully!");
+        },
+        (error) => {
           console.log(error.text);
-      })
-      e.target.reset()
-    };
+          setStatus("error");
+          setResponseMessage("Failed to send message.");
+        }
+      );
+    e.target.reset();
+
+    setTimeout(() => {
+      setStatus("");
+      setResponseMessage("");
+    }, 3000);
+  };
 
   return (
     <>
       <div className="container">
-        <form ref={form} onSubmit={sendEmail} className="card">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="card"
+          id="contact-card"
+        >
           <h3>I'll be glad to hear from you!</h3>
           <label htmlFor="user_fname">First Name</label>
           <input
@@ -64,10 +90,20 @@ const Contact = () => {
           <button type="submit" className="btn">
             Send Message
           </button>
+          <div className="response">
+            {status && (
+              <div
+                className={`status-message ${
+                  status === "success" ? "success" : "error"
+                }`}
+              >
+                {responseMessage}
+              </div>
+            )}
+          </div>
         </form>
       </div>
     </>
   );
 };
-
 export default Contact;

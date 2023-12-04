@@ -48,3 +48,11 @@ margin-top: 6vh;
     width: 24%;
   }
   
+  li {
+    list-style:decimal;
+  }
+ 
+  @media (max-width: 780px) {
+  
+  }
+  

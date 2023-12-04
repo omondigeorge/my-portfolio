@@ -17,10 +17,19 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   text-align: center;
+  width: 50vw;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.75), 6px 6px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
 }
 
 .project-image {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+}
+
+@media (max-width: 780px) {
+  
 }
